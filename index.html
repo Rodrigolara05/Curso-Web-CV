@@ -4,11 +4,37 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Portafolio</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
 		<!--Etiquetas para texto-->
-		<h1>Portafolio</h1>
-		<h2>Mis otras paginas</h2>
+		<h1 id="portafolio_title">Portafolio</h1>
+
+		<h2 >Indice</h2>
+		<ul type="none" class="IndiceList">
+			<li>
+				<a href="#MisOtrasPaginas">
+					Mis otras paginas
+				</a>
+			</li>
+			<li>
+				<a href="#MisArticulos">
+					Mis articulos
+				</a>
+			</li>
+			<li><a href="#CursosLlevados">
+					Cursos llevados
+				</a></li>
+			<li><a href="#Notas">
+					Notas
+				</a></li>
+			<li><a href="#Contacto">
+					Contacto
+				</a></li>
+		</ul>
+
+		<h2 id="MisOtrasPaginas">Mis otras paginas</h2>
+		
 		<ul>
 			<li type="square">
 				<a href="experiencia.html"> Mi experiencia laboral </a>
@@ -25,38 +51,50 @@
 			</li>
 		</ul>
 
-		<h2>Mis Articulos</h2>
+		<h2 id="MisArticulos">Mis Articulos</h2>
 
 		<article>
 			<h3>Google</h3>
-			<p>
+			<p id="GoogleText">
 				<label style="font-weight: bold;">Google</label>
-				 Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today.<abbr title="Universidad Peruana de Ciencias Aplicadas">UPC</abbr>
+				 Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today.<abbr class="Abreviatura" title="Universidad Peruana de Ciencias Aplicadas">UPC</abbr>
 			</p>
 		</article>
 
 		<!--Listas-->
-		<h2>Cursos Llevados</h2>
+		<h2 id="CursosLlevados">Cursos Llevados</h2>
+		<div id="ContenidoCursosLlevados">
 		<!--ORDER LIST-->
-		<ol>
-			<li>
-				Primer Ciclo
-				<ul>
-					<li type="circle">Programación 1</li>
-					<li type="circle">Matematica Basica</li>
-					<li type="circle">Etica</li>
-				</ul>
-			</li>
-			<li>
-				Segundo Ciclo
-				<ul>
-					<li type="circle">Programación 2</li>
-					<li type="circle">Calculo 1</li>
-					<li type="circle">Fisica 1</li>
-				</ul>
-			</li>
-		</ol>
+			<div class="CicloGrupo">
+				<ol>
+					<li>
+						Primer Ciclo
+						<ul>
+							<li id="Programacion1" type="circle">Programación 1</li>
+							<li type="circle">Matematica Basica</li>
+							<li type="circle">Etica</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
 
+			<div class="CicloGrupo">
+				<ol>
+					<li value="2">
+						Segundo Ciclo
+						<ul>
+							<li type="circle">Programación 2</li>
+							<li type="circle">Calculo 1</li>
+							<li type="circle">Fisica 1</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<h2>Hobbies</h2>
+		<div style="text-align: center;">
+		<img src="https://3.bp.blogspot.com/-W_RQ0YRl4OA/V9Nlrd0XwpI/AAAAAAAAQiU/vV9m0CrIiZw1-iApk3JWv4W-rabMUfJKACLcB/s1600/10%2Bmil%2Blibros%2Bgratis%2Bpdf.jpg" alt="Imagen de un libro" title="Mi libro" width="400px">
+		</div>
 		<!--Multimedia-->
 <!--
 		<h2>Hobbies</h2>
@@ -66,7 +104,7 @@
 			<source src="sonido1.mp3" type="audio/ogg">
 		</audio>
 -->
-		<h2>Notas</h2>
+		<h2 id="Notas">Notas</h2>
 		<table border="1" align="left">
 			<tr>
 				<th>
@@ -96,7 +134,7 @@
 		<br>
 
 		<!--Formulario-->
-		<h2>Contacto</h2>
+		<h2 id="Contacto">Contacto</h2>
 		<form>
 			<p>
 				<label>Email:</label>
@@ -145,7 +183,6 @@
 				Subir Datos
 			</button>
 		</form>
-
 
 	</body>
 

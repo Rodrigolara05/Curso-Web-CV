@@ -1,0 +1,73 @@
+<style>
+/* CSS */
+	/*Por Etiqueta*/
+	h2 {
+		text-align: center;
+	}
+	/*Por Etiqueta y Clase*/
+	p .Abreviatura{
+		font-family: verdana;
+	}
+	/*Por Etiqueta y Etiqueta*/
+	ol ul{
+		font-size: 30px;
+	}
+	/*Por Etiqueta y ID*/
+	ol #Programacion1{
+		color: blue;
+	}
+
+
+	/******* Por ID ************/
+	#portafolio_title{
+		text-align: center;
+	}
+
+	#GoogleText{
+		cursor: wait;
+	}
+	#ContenidoCursosLlevados{
+		display: flow-root;
+	}
+	/************ Por Clase ************/
+	.IndiceList{
+		padding-left: 20px;
+	}
+	.IndiceList a:hover{
+		font-weight: bold;
+	}
+
+	.IndiceList li::before{
+		content: "φ";
+	}
+
+	.IndiceList li{
+		margin-bottom: 1rem;
+	}
+
+	
+	body {
+  		background-color: tan;
+	}
+	.CicloGrupo{
+		width: 100%;
+	}
+	img{
+		width: 700px;
+
+	}
+	@media screen and (max-width: 992px) {
+	  body {
+	    background-color: aliceblue;
+	  }
+	  .CicloGrupo{
+			width: 50%;
+		}
+		#ContenidoCursosLlevados{
+			display: flex;
+		}
+		img{
+			width: 400px;
+		}
+	}
+</style>

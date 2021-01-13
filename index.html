@@ -1,189 +1,215 @@
-<!--Este es mi pagina web-->
 <!DOCTYPE html>
-<html lang="es">
+<html>
 	<head>
+		<title>Portafolio personal- Rodrigo Lara</title>
 		<meta charset="utf-8">
-		<title>Portafolio</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Blog Personal">
+		<meta name="autor" content="Rodrigo Lara">
+		<meta name="viewport" content="width=device-with">
+
+    	<!-- FontAwesome JS-->
+		<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+		<!--Theme css-->
+		<link id="theme-style" rel="stylesheet" type="text/css" href="assets\css\theme-1.css">
 	</head>
 	<body>
-		<!--Etiquetas para texto-->
-		<h1 id="portafolio_title">Portafolio</h1>
+		<header class="header text-center">
+			<h1 class="blog-name pt-lg-4 mb-0"> 
+			<a href="index.html">
+			Rodrigo Lara
+			</a>
+			</h1>
 
-		<h2 >Indice</h2>
-		<ul type="none" class="IndiceList">
-			<li>
-				<a href="#MisOtrasPaginas">
-					Mis otras paginas
-				</a>
-			</li>
-			<li>
-				<a href="#MisArticulos">
-					Mis articulos
-				</a>
-			</li>
-			<li><a href="#CursosLlevados">
-					Cursos llevados
-				</a></li>
-			<li><a href="#Notas">
-					Notas
-				</a></li>
-			<li><a href="#Contacto">
-					Contacto
-				</a></li>
-		</ul>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-		<h2 id="MisOtrasPaginas">Mis otras paginas</h2>
-		
-		<ul>
-			<li type="square">
-				<a href="experiencia.html"> Mi experiencia laboral </a>
-			</li>
-			<li type="square">
-				<a href="https://www.Github.com/rodrigolara05" target="_blank">
-					Mis proyectos
-				</a>
-			</li>
-			<li type="square">
-				<a href="certificados.html" >
-					Mis certificados
-				</a>
-			</li>
-		</ul>
+				<div id="navigation" class="collapse navbar-collapse flex-column">
+					<!--Profile Section-->
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto"  src="https://avatars2.githubusercontent.com/u/42646296?s=460&u=200d8e83c7ab0a9fcbda26fdafae3f797898ee5d&v=4" alt="profile image">
 
-		<h2 id="MisArticulos">Mis Articulos</h2>
+						<div class="bio mb-3">
+							Hola, me llamo Rodrigo Lara. Estudiante de Ingenieria de software y desarrollador web.
+							<br>
+							<a href="about.html">Conoce mas sobre mi</a>
+						</div>
 
-		<article>
-			<h3>Google</h3>
-			<p id="GoogleText">
-				<label style="font-weight: bold;">Google</label>
-				 Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today.<abbr class="Abreviatura" title="Universidad Peruana de Ciencias Aplicadas">UPC</abbr>
-			</p>
-		</article>
+						<ul class="social-list list-inline py-3 mx-auto">
+							<li class="list-inline-item">
+								<a href="https://github.com/Rodrigolara05" target="_blank">
+									<i class="fab fa-github-alt fa-fw">
+									</i>
+								</a>
+							</li>
 
-		<!--Listas-->
-		<h2 id="CursosLlevados">Cursos Llevados</h2>
-		<div id="ContenidoCursosLlevados">
-		<!--ORDER LIST-->
-			<div class="CicloGrupo">
-				<ol>
-					<li>
-						Primer Ciclo
-						<ul>
-							<li id="Programacion1" type="circle">Programación 1</li>
-							<li type="circle">Matematica Basica</li>
-							<li type="circle">Etica</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-twitter fa-fw">
+									</i>
+								</a>
+							</li>
+
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-facebook fa-fw">
+									</i>
+								</a>
+							</li>
 						</ul>
-					</li>
-				</ol>
-			</div>
+						<hr>
 
-			<div class="CicloGrupo">
-				<ol>
-					<li value="2">
-						Segundo Ciclo
-						<ul>
-							<li type="circle">Programación 2</li>
-							<li type="circle">Calculo 1</li>
-							<li type="circle">Fisica 1</li>
-						</ul>
-					</li>
-				</ol>
-			</div>
-		</div>
-		<h2>Hobbies</h2>
-		<div style="text-align: center;">
-		<img src="https://3.bp.blogspot.com/-W_RQ0YRl4OA/V9Nlrd0XwpI/AAAAAAAAQiU/vV9m0CrIiZw1-iApk3JWv4W-rabMUfJKACLcB/s1600/10%2Bmil%2Blibros%2Bgratis%2Bpdf.jpg" alt="Imagen de un libro" title="Mi libro" width="400px">
-		</div>
-		<!--Multimedia-->
-<!--
-		<h2>Hobbies</h2>
-		<img src="https://3.bp.blogspot.com/-W_RQ0YRl4OA/V9Nlrd0XwpI/AAAAAAAAQiU/vV9m0CrIiZw1-iApk3JWv4W-rabMUfJKACLcB/s1600/10%2Bmil%2Blibros%2Bgratis%2Bpdf.jpg" alt="Imagen de un libro" title="Mi libro" width="500">
+					</div>
 
-		<audio controls>
-			<source src="sonido1.mp3" type="audio/ogg">
-		</audio>
--->
-		<h2 id="Notas">Notas</h2>
-		<table border="1" align="left">
-			<tr>
-				<th>
-					Taller de creatividad
-				</th>
-				<th>
-					Etica
-				</th>
-				<th>
-					Lenguaje
-				</th>
-			</tr>
-			<tr>
-				<td> 16.00 </td>
-				<td> 20.00 </td>
-				<td> 14.00 </td>
-			</tr>
-			<tr>
-				<td> 13.00 </td>
-				<td> 10.00 </td>
-				<td> 18.00 </td>
-			</tr>
-		</table>
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">
+								<i class="fas fa-home fa-fw mr-2"></i>
+								Blog Home
+							</a>
+						</li>
 
-		<br>
-		<br>
-		<br>
+						<li class="nav-item">
+							<a class="nav-link" href="blog-post.html">
+								<i class="fas fa-book fa-fw mr-2"></i>
+								Blog Post
+							</a>
+						</li>
 
-		<!--Formulario-->
-		<h2 id="Contacto">Contacto</h2>
-		<form>
-			<p>
-				<label>Email:</label>
-				<input type="email" name="inputNombre">
-			</p>
-			<p>
-				<label>Password:</label>
-				<input type="password" name="inputPassword">
-			</p>
-			
-			<p>
-				<label>Alternativas:</label>
-				<label>
-					<input type="checkbox">
-						Si
-				</label>
-				<label>
-					<input type="checkbox">
-						No
-				</label>
-			</p>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">
+								<i class="fas fa-user fa-fw mr-2"></i>
+								About Me
+							</a>
+						</li>
 
-			<p>
-				<label>Genero:</label>
-				<label>
-					<input type="radio" name="genero">
-						M
-				</label>
-				<label>
-					<input type="radio" name="genero">
-						F
-				</label>
-			</p>
-			
-			<p>
-				<label>Fecha:</label>
-				<input type="date">
-			</p>
+					</ul>
 
-			<p>
-				<label>Archivo:</label>
-				<input type="file" accept=".jpg,.png">
-			</p>
+					<div class="my-2 my-md-3">
+						<a class="btn btn-primary" href="#" target="_blank">Get in touch</a>
+					</div>
+				</div>
+			</nav>
 
-			<button value="Subir datos">
-				Subir Datos
-			</button>
-		</form>
+		</header>
+
+		<div class="main-wrapper">
+			<section class="cta-section theme-bg-light py-5">
+				<div class="container text-center">
+					<h2 class="heading">Codigo Fuente Blog- Un blog para desarrolladores</h2>
+					<div class="intro"> Bienvenido a mi blog. Suscribite para que tengas lo ultimo en tu bandeja de correo.</div>
+					<form method="POST" class="signup-form form-inline justify-content-center pt-3">
+						<div class="form-group">
+							<label class="sr-only" for="semail">Tu email</label>
+							<input type="email" name="semaill" id="semail" class="form-control mr-md-1 semail" placeholder="Ingrese Email">
+						</div>
+						<button type="submit" class="btn btn-primary">Suscribete</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="blog-list px-3 py-5 pd-md-5">
+				<div class="container">
+					
+					<div class="item mb">
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WeDT496cHEGv059_DNKXfAYdDJWFZvlbAQ&usqp=CAU" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										Porque todo desarrollador deberia saber HTML, CSS y Javascript
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 16 horas
+									</span>
+									<span class="time">
+										6 min de lectura
+									</span>
+									<span class="comment">
+										10 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Hoy en dia todo desarrollador web esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas nativos de CSS, HTML, Javascript...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+					<hr>
+					<div class="item mb">
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://androidayuda.com/app/uploads-androidayuda.com/2019/07/android-error.jpg?x=345&y=211" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										10 cosas que no sabias del desarrollo movil
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 2 dias
+									</span>
+									<span class="time">
+										8 min de lectura
+									</span>
+									<span class="comment">
+										25 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Hoy en dia todo desarrollador movil esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas en su entorno de desarrolladores con malas practicas, etc ...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+					<hr>
+					<div class="item mb">
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYTiD2dwUHV27p9rojv9NrqqWpeIVsm24SSQ&usqp=CAU" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										Python el futuro del backend
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 10 dias
+									</span>
+									<span class="time">
+										3 min de lectura
+									</span>
+									<span class="comment">
+										200 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Python es una de las tecnologias mas usadas y de los lenguajes mas queridos por los desarrolladores, llegando a crear software tremendamente complejos solo con ...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer text-center py-2 theme-bg-dark">
+				<small class="copyright">Diseñado
+					<i class="fas fa-coffee">
+					</i>
+					por 
+					<a href="#" target="_blank">Rodrigo Lara</a>
+					para los desarrolladores
+				</small>
+			</footer>
+		</div> <!--Main Wrapper-->
 
 	</body>
-
 </html>

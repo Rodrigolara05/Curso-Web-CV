@@ -1,0 +1,189 @@
+<!--Este es mi pagina web-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Portafolio</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<!--Etiquetas para texto-->
+		<h1 id="portafolio_title">Portafolio</h1>
+
+		<h2 >Indice</h2>
+		<ul type="none" class="IndiceList">
+			<li>
+				<a href="#MisOtrasPaginas">
+					Mis otras paginas
+				</a>
+			</li>
+			<li>
+				<a href="#MisArticulos">
+					Mis articulos
+				</a>
+			</li>
+			<li><a href="#CursosLlevados">
+					Cursos llevados
+				</a></li>
+			<li><a href="#Notas">
+					Notas
+				</a></li>
+			<li><a href="#Contacto">
+					Contacto
+				</a></li>
+		</ul>
+
+		<h2 id="MisOtrasPaginas">Mis otras paginas</h2>
+		
+		<ul>
+			<li type="square">
+				<a href="experiencia.html"> Mi experiencia laboral </a>
+			</li>
+			<li type="square">
+				<a href="https://www.Github.com/rodrigolara05" target="_blank">
+					Mis proyectos
+				</a>
+			</li>
+			<li type="square">
+				<a href="certificados.html" >
+					Mis certificados
+				</a>
+			</li>
+		</ul>
+
+		<h2 id="MisArticulos">Mis Articulos</h2>
+
+		<article>
+			<h3>Google</h3>
+			<p id="GoogleText">
+				<label style="font-weight: bold;">Google</label>
+				 Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today.<abbr class="Abreviatura" title="Universidad Peruana de Ciencias Aplicadas">UPC</abbr>
+			</p>
+		</article>
+
+		<!--Listas-->
+		<h2 id="CursosLlevados">Cursos Llevados</h2>
+		<div id="ContenidoCursosLlevados">
+		<!--ORDER LIST-->
+			<div class="CicloGrupo">
+				<ol>
+					<li>
+						Primer Ciclo
+						<ul>
+							<li id="Programacion1" type="circle">Programación 1</li>
+							<li type="circle">Matematica Basica</li>
+							<li type="circle">Etica</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+
+			<div class="CicloGrupo">
+				<ol>
+					<li value="2">
+						Segundo Ciclo
+						<ul>
+							<li type="circle">Programación 2</li>
+							<li type="circle">Calculo 1</li>
+							<li type="circle">Fisica 1</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<h2>Hobbies</h2>
+		<div style="text-align: center;">
+		<img src="https://3.bp.blogspot.com/-W_RQ0YRl4OA/V9Nlrd0XwpI/AAAAAAAAQiU/vV9m0CrIiZw1-iApk3JWv4W-rabMUfJKACLcB/s1600/10%2Bmil%2Blibros%2Bgratis%2Bpdf.jpg" alt="Imagen de un libro" title="Mi libro" width="400px">
+		</div>
+		<!--Multimedia-->
+<!--
+		<h2>Hobbies</h2>
+		<img src="https://3.bp.blogspot.com/-W_RQ0YRl4OA/V9Nlrd0XwpI/AAAAAAAAQiU/vV9m0CrIiZw1-iApk3JWv4W-rabMUfJKACLcB/s1600/10%2Bmil%2Blibros%2Bgratis%2Bpdf.jpg" alt="Imagen de un libro" title="Mi libro" width="500">
+
+		<audio controls>
+			<source src="sonido1.mp3" type="audio/ogg">
+		</audio>
+-->
+		<h2 id="Notas">Notas</h2>
+		<table border="1" align="left">
+			<tr>
+				<th>
+					Taller de creatividad
+				</th>
+				<th>
+					Etica
+				</th>
+				<th>
+					Lenguaje
+				</th>
+			</tr>
+			<tr>
+				<td> 16.00 </td>
+				<td> 20.00 </td>
+				<td> 14.00 </td>
+			</tr>
+			<tr>
+				<td> 13.00 </td>
+				<td> 10.00 </td>
+				<td> 18.00 </td>
+			</tr>
+		</table>
+
+		<br>
+		<br>
+		<br>
+
+		<!--Formulario-->
+		<h2 id="Contacto">Contacto</h2>
+		<form>
+			<p>
+				<label>Email:</label>
+				<input type="email" name="inputNombre">
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" name="inputPassword">
+			</p>
+			
+			<p>
+				<label>Alternativas:</label>
+				<label>
+					<input type="checkbox">
+						Si
+				</label>
+				<label>
+					<input type="checkbox">
+						No
+				</label>
+			</p>
+
+			<p>
+				<label>Genero:</label>
+				<label>
+					<input type="radio" name="genero">
+						M
+				</label>
+				<label>
+					<input type="radio" name="genero">
+						F
+				</label>
+			</p>
+			
+			<p>
+				<label>Fecha:</label>
+				<input type="date">
+			</p>
+
+			<p>
+				<label>Archivo:</label>
+				<input type="file" accept=".jpg,.png">
+			</p>
+
+			<button value="Subir datos">
+				Subir Datos
+			</button>
+		</form>
+
+	</body>
+
+</html>

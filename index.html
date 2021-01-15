@@ -1,215 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Portafolio personal- Rodrigo Lara</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="Blog Personal">
-		<meta name="autor" content="Rodrigo Lara">
-		<meta name="viewport" content="width=device-with">
+<head>
+	<title> Primera sesión con Javascript </title>
+	<script type="text/javascript" src="script-fundamentals.js"></script>
+</head>
+<body>
+	<h1 id="titulo"> Primera sesión con Javascript </h1>
+	<p>
+		Parrafo 1
+	</p>
+	<p>
+		Parrafo 2
+	</p>
+	<hr class="item">
+	<ul>
+		<li class="item">Item 1</li>
+		<li class="item">Item 2</li>
+		<li class="item">Item 3</li>
+	</ul>
 
-    	<!-- FontAwesome JS-->
-		<script defer src="assets/fontawesome/js/all.min.js"></script>
-
-		<!--Theme css-->
-		<link id="theme-style" rel="stylesheet" type="text/css" href="assets\css\theme-1.css">
-	</head>
-	<body>
-		<header class="header text-center">
-			<h1 class="blog-name pt-lg-4 mb-0"> 
-			<a href="index.html">
-			Rodrigo Lara
-			</a>
-			</h1>
-
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div id="navigation" class="collapse navbar-collapse flex-column">
-					<!--Profile Section-->
-					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto"  src="https://avatars2.githubusercontent.com/u/42646296?s=460&u=200d8e83c7ab0a9fcbda26fdafae3f797898ee5d&v=4" alt="profile image">
-
-						<div class="bio mb-3">
-							Hola, me llamo Rodrigo Lara. Estudiante de Ingenieria de software y desarrollador web.
-							<br>
-							<a href="about.html">Conoce mas sobre mi</a>
-						</div>
-
-						<ul class="social-list list-inline py-3 mx-auto">
-							<li class="list-inline-item">
-								<a href="https://github.com/Rodrigolara05" target="_blank">
-									<i class="fab fa-github-alt fa-fw">
-									</i>
-								</a>
-							</li>
-
-							<li class="list-inline-item">
-								<a href="#">
-									<i class="fab fa-twitter fa-fw">
-									</i>
-								</a>
-							</li>
-
-							<li class="list-inline-item">
-								<a href="#">
-									<i class="fab fa-facebook fa-fw">
-									</i>
-								</a>
-							</li>
-						</ul>
-						<hr>
-
-					</div>
-
-					<ul class="navbar-nav flex-column text-left">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">
-								<i class="fas fa-home fa-fw mr-2"></i>
-								Blog Home
-							</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="blog-post.html">
-								<i class="fas fa-book fa-fw mr-2"></i>
-								Blog Post
-							</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">
-								<i class="fas fa-user fa-fw mr-2"></i>
-								About Me
-							</a>
-						</li>
-
-					</ul>
-
-					<div class="my-2 my-md-3">
-						<a class="btn btn-primary" href="#" target="_blank">Get in touch</a>
-					</div>
-				</div>
-			</nav>
-
-		</header>
-
-		<div class="main-wrapper">
-			<section class="cta-section theme-bg-light py-5">
-				<div class="container text-center">
-					<h2 class="heading">Codigo Fuente Blog- Un blog para desarrolladores</h2>
-					<div class="intro"> Bienvenido a mi blog. Suscribite para que tengas lo ultimo en tu bandeja de correo.</div>
-					<form method="POST" class="signup-form form-inline justify-content-center pt-3">
-						<div class="form-group">
-							<label class="sr-only" for="semail">Tu email</label>
-							<input type="email" name="semaill" id="semail" class="form-control mr-md-1 semail" placeholder="Ingrese Email">
-						</div>
-						<button type="submit" class="btn btn-primary">Suscribete</button>
-					</form>
-				</div>
-			</section>
-
-			<section class="blog-list px-3 py-5 pd-md-5">
-				<div class="container">
-					
-					<div class="item mb" >
-						<div class="media">
-							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WeDT496cHEGv059_DNKXfAYdDJWFZvlbAQ&usqp=CAU" alt="imagen de post">
-							<div class="media-body">
-								<h3 class="title mb-1">
-									<a href="blog-post.html">
-										Porque todo desarrollador deberia saber HTML, CSS y Javascript
-									</a>
-								</h3>
-								<div class="meta mb-1">
-									<span class="date">
-										Publicado hace 16 horas
-									</span>
-									<span class="time">
-										6 min de lectura
-									</span>
-									<span class="comment">
-										10 comentarios
-									</span>
-								</div>
-								<div class="intro">
-									Hoy en dia todo desarrollador web esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas nativos de CSS, HTML, Javascript...
-								</div>
-								<a class="more-link" href="blog-post.html">Read more</a>
-							</div>
-						</div>	
-					</div>
-					<hr>
-					<div class="item mb" >
-						<div class="media">
-							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://androidayuda.com/app/uploads-androidayuda.com/2019/07/android-error.jpg?x=345&y=211" alt="imagen de post">
-							<div class="media-body">
-								<h3 class="title mb-1">
-									<a href="blog-post.html">
-										10 cosas que no sabias del desarrollo movil
-									</a>
-								</h3>
-								<div class="meta mb-1">
-									<span class="date">
-										Publicado hace 2 dias
-									</span>
-									<span class="time">
-										8 min de lectura
-									</span>
-									<span class="comment">
-										25 comentarios
-									</span>
-								</div>
-								<div class="intro">
-									Hoy en dia todo desarrollador movil esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas en su entorno de desarrolladores con malas practicas, etc ...
-								</div>
-								<a class="more-link" href="blog-post.html">Read more</a>
-							</div>
-						</div>	
-					</div>
-					<hr>
-					<div class="item mb">
-						<div class="media">
-							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYTiD2dwUHV27p9rojv9NrqqWpeIVsm24SSQ&usqp=CAU" alt="imagen de post">
-							<div class="media-body">
-								<h3 class="title mb-1">
-									<a href="blog-post.html">
-										Python el futuro del backend
-									</a>
-								</h3>
-								<div class="meta mb-1">
-									<span class="date">
-										Publicado hace 10 dias
-									</span>
-									<span class="time">
-										3 min de lectura
-									</span>
-									<span class="comment">
-										200 comentarios
-									</span>
-								</div>
-								<div class="intro">
-									Python es una de las tecnologias mas usadas y de los lenguajes mas queridos por los desarrolladores, llegando a crear software tremendamente complejos solo con ...
-								</div>
-								<a class="more-link" href="blog-post.html">Read more</a>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer text-center py-2 theme-bg-dark">
-				<small class="copyright">Diseñado
-					<i class="fas fa-coffee">
-					</i>
-					por 
-					<a href="#" target="_blank">Rodrigo Lara</a>
-					para los desarrolladores
-				</small>
-			</footer>
-		</div> <!--Main Wrapper-->
-
-	</body>
+</body>
+<!--
+<script type="text/javascript" src="script.js">
+	</script>
+-->
 </html>

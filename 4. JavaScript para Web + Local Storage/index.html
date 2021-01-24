@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Primera sesión con Javascript </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<style type="text/css">
+		.hide{
+			display: none;
+		}
+		.collapsible{
+			background-color: #eee;
+			color: #444;
+			cursor: help;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+		.collapsible:after{
+			content: '\02795';
+			float: right;
+			font-size: 13px;
+			color: white;
+
+		}
+		.active, .collapsible:hover{
+			background-color: #ccc;
+		}
+		.active:after{
+			content: "\02796";
+		}
+		.content{
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="script-fundamentals.js"></script>-->
+</head>
+<body>
+	<h1 id="titulo"> Primera sesión con Javascript </h1>
+	<br>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu Desplegable</button>
+			<ul class="dropdown-menu">
+				<li>Opción 1</li>
+				<li>Opción 2</li>
+				<li>Opción 3</li>
+				<li>Opción 4</li>
+			</ul>
+		</div>
+	<br>
+	<button type="button" id="btn-aparecer" class="collapsible">Open Collapsible 1</button>
+	<div class="content">
+		<p>
+			Parrafo 1
+		</p>	
+	</div>
+
+	<button type="button" id="btn-aparecer" class="collapsible">Open Collapsible 2</button>
+	<div class="content">
+		<p>
+			When using button classes elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers.
+		</p>	
+	</div>
+
+	<button type="button" id="btn-aparecer" class="collapsible">Open Collapsible 3</button>
+	<div class="content">
+		<p>
+			Parrafo 3
+		</p>	
+	</div>
+
+	<br>
+<form>
+	<h2>Local Storage</h2>
+	<label for="input-key">Clave
+		<input id="input-key" type="text" name="input-key">
+	</label>
+	<label id="err-input-key"></label>
+	<br>
+	<label for="input-value">Valor
+		<input id="input-value" type="text" name="input-value">
+	</label>
+	<label id="err-input-value"></label>
+	<hr>
+	<button type="button" id="btn-search" class="btn btn-primary">Search</button>
+	<button type="button" id="btn-add" class="btn btn-secondary">Add</button>
+	<button type="button" id="btn-remove" class="btn btn-success">Remove</button>
+</form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="eventos.js"></script>
+</html>

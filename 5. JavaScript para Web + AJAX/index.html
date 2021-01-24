@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Segunda clase de Eventos JS</title>
+	<style type="text/css">
+		.msg-error{
+			color:red;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Agregar Paises</h1>
+	<section>
+		<form>
+			<label for="input-nombre">
+				Nombre del Pais
+				<input id="input-nombre" type="text" name="nombre">
+			</label>
+			<label class="msg-error" id="error-nombre"></label>
+			<br>
+			<label for="input-region">
+				Region
+				<input id="input-region" type="text" name="region">
+			</label>
+			<label class="msg-error" id="error-region"></label>
+			<br>
+			<label for="input-sub-region">
+				Sub-Region
+				<input id="input-sub-region" type="text" name="sub-region">
+			</label>
+			<label class="msg-error" id="error-sub-region"></label>
+			<br>
+			<label for="input-capital">
+				Capital
+				<input id="input-capital" type="text" name="capital">
+			</label>
+			<label class="msg-error" id="error-capital"></label>
+			<br>
+			<br>
+			<button id="btn-subir" type="button">Subir Pais</button>
+			<hr>
+			<label>
+				Seleccione la región a importar
+				<select id="cb-regiones">
+					<option value="EU">European Union</option>
+					<option value="PA">Pacific Alliance</option>
+					<option value="AU">African Union</option>
+					<option value="AL">Arab League</option>
+				</select>
+			</label>
+			<br>
+			<button id="btn-importar" type="button">Importar Paises</button>
+			<button id="btn-limpiar" type="button">Limpiar Tabla</button>
+		</form>
+	</section>
+	<hr>
+	<!--
+	<section>
+		<table border="1">
+			<tr>
+				<th>
+					Nombre
+				</th>
+				<th>
+					Region
+				</th>
+				<th>
+					Sub-Region
+				</th>
+				<th>
+					Capital
+				</th>
+			</tr>
+		</table>
+	</section>
+-->
+<section>
+	<div id="tableContent"></div>
+</section>
+</body>
+	<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Iniciar Sesión</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/signin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="text-center">
+	<form class="form-signin" action="dashboard.html" method="GET" onsubmit="return IniciarSesion()">
+
+		<img class="mb-4" alt="logo" width="72" height="72" 
+		src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30163918/1241-768x591.png">
+
+		<h1 class="h3 mb-3 font-weight-normal">Inicia Sesión</h1>
+		<label for="inputEmail" class="sr-only">Correo Electronico</label>
+		<input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required="" autofocus="">
+		
+		<label for="inputPassword" class="sr-only">Contraseña</label>
+		<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+
+		<div class="checkbox mb-3">
+			<label>
+				<input type="checkbox" value="remember-me"> Recuerdame
+			</label>
+		</div>
+
+		<button class="btn btn-lg btn-primary btn-block" type="submit">
+			Iniciar Sesión
+		</button>
+		<p>
+			No tiene cuenta? Registrese <a href="registrarse.html">aquí</a>
+		</p>
+		<p class="mt-5 mb-3 text-muted">© EventSoft-2021</p>
+	</form>
+
+	<script type="text/javascript" src="js/iniciar-sesion.js"></script>
+</body>
+</html>

@@ -1,5 +1,0 @@
-//
-function Registrarse(){
-	
-} 
-Registrarse();

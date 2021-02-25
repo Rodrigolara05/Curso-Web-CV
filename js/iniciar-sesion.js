@@ -1,5 +1,0 @@
-//
-function IniciarSesion(){
-
-} 
-IniciarSesion();

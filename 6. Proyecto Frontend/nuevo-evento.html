@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Nuevo Evento</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/signin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="text-center">
+	<form class="form-signin" method="GET" action="dashboard.html" onsubmit="return CrearEvento()">
+		<h1 class="h3 mb-3 font-weight-normal">Crear nuevo evento</h1>
+		
+		<label for="inputTitulo" class="sr-only">Titulo del Evento</label>
+		<input type="text" id="inputTitulo" class="form-control" placeholder="Titulo del Evento" required="" autofocus="">
+
+		<label for="inputDescription" class="sr-only">Descripción</label>
+		<textarea style="resize: none;" id="inputDescription" class="form-control" rows="4" placeholder="Descripción" required=""></textarea>
+
+		<input type="text" id="inputNombres" class="form-control" placeholder="Nombres" required="">	
+		
+		<label for="inputTiempo" class="sr-only">Tiempo</label>
+		<input type="number" id="inputTiempo" class="form-control" placeholder="Tiempo" required="">
+
+		<label for="inputImagen" class="sr-only">Imagen (URL)</label>
+		<input type="text" id="inputImagen" class="form-control" placeholder="Imagen (URL)" required="">
+
+		<button class="btn btn-lg btn-primary btn-block" type="submit">
+			Crear
+		</button>
+		<p class="mt-5 mb-3 text-muted">© EventSoft-2021</p>
+	</form>
+	
+	<script type="text/javascript" src="js/nuevo-evento.js"></script>
+</body>
+</html>

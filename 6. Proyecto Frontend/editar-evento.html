@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Editar Evento</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/signin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="text-center">
+	<form class="form-signin" method="GET" action="dashboard.html" onsubmit="return EditarEvento()">
+		<h1 class="h3 mb-3 font-weight-normal">Editar evento</h1>
+		
+		<label for="inputTitulo" class="sr-only">Titulo del Evento</label>
+		<input type="text" id="inputTitulo" class="form-control" placeholder="Titulo del Evento" required="" autofocus="">
+
+		<label for="inputDescription" class="sr-only">Descripción</label>
+		<textarea style="resize: none;" id="inputDescription" class="form-control" rows="4" placeholder="Descripción" required=""></textarea>
+
+		<label for="inputTiempo" class="sr-only">Tiempo</label>
+		<input type="text" id="inputTiempo" class="form-control" placeholder="Tiempo" required="">
+
+		<label for="inputImagen" class="sr-only">Imagen (URL)</label>
+		<input type="text" id="inputImagen" class="form-control" placeholder="Imagen (URL)" required="">
+
+		<button class="btn btn-lg btn-primary btn-block" type="submit">
+			Editar
+		</button>
+		<p class="mt-5 mb-3 text-muted">© EventSoft-2021</p>
+	</form>
+	<script type="text/javascript" src="entities/evento.js"></script>
+	<script type="text/javascript" src="js/editar-evento.js"></script>
+</body>
+</html>

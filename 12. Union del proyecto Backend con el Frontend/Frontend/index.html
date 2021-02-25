@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Event-Soft</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">Sobre Nosotros</h4>
+						<p class="text-muted">
+							Somos una empresa dedicada a la venta de boletos, tickets y sentimientos para las personas. Para que pasen un buen rato y entretenidos ya se a con familia o amigos.
+						</p>
+					</div>
+
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Opciones</h4>
+						<ul class="list-unstyled">
+							<li>
+								<a href="iniciar-sesion.html" class="text-white">Iniciar Sesión</a>
+							</li>
+							<li>
+								<a href="registrarse.html" class="text-white">Registrarse</a>
+							</li>
+							<li>
+								<a href="#" class="text-white">Nuestras politicas de privacidad</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-dark bg-dark box-shadow">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<strong>Event-Soft</strong>					
+				</a>
+				<button class="navbar-toggler" type="button" 
+				data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+				aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+
+
+	<main role="main">
+		<section class="jumbotron text-center">
+			<div class="container">
+				<h1 class="jumbotron-heading">Bienvenido a Event-Soft!</h1>
+				<p class="lead text-muted">
+					Bienvenido al lugar donde encontraras miles de eventos de manera gratuita
+				</p>
+				<p>
+					<a href="#Events-Container" class="btn btn-primary my-2">Eventos disponibles</a>
+					<a href="#" class="btn btn-secondary my-2">Evento de la semana</a>
+				</p>
+			</div>
+		</section>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row" id="Events-Container">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="text-muted">
+		<div class="container">
+			<p class="float-right">
+				<a href="#">Regresar al inicio</a>
+			</p>
+			<p>
+				Todos los derechos reservados
+			</p>
+			<p>Visitanos en <a href="#">Facebook</a> o lee nuestro <a href="#">blog</a></p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="entities/evento.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
